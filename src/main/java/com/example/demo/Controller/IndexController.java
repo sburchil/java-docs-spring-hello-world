@@ -1,0 +1,32 @@
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@RestController
+public class IndexController {
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String showIndex(HttpServletRequest request, Model model) {
+        model.addAttribute("Title", "Fireball Visualizer");
+        return "index";
+    }
+
+    @RequestMapping(value = "/globe", method = RequestMethod.GET)
+    public String showGlobe(HttpServletRequest request, Model model) {
+        model.addAttribute("Title", "Fireball Visualizer");
+
+        return "globe";
+    }
+
+    @RequestMapping(value = "/newglobe", method = RequestMethod.GET)
+    public String showNewGlobe(HttpServletRequest request, Model model) {
+        model.addAttribute("Title", "Fireball Visualizer");
+        return "newglobe";
+    }
+
+    @RequestMapping(value = "/testglobe", method = RequestMethod.GET)
+    public String showTestGlobe(HttpServletRequest request, Model model) {
+        return "testglobe";
+    }
+
+}
