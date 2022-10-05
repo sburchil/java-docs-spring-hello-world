@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='stylesheet' href='css/style.css' />
+    <!-- <link rel='stylesheet' href='css/style.css' /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.0/dist/darkly/bootstrap.min.css">
     <title>${Title}</title>
 </head>
@@ -13,9 +13,9 @@
       <h1>Welcome to ${Title} </h1>
     </div>
     <div class="text-center">
-      <a type="button" class="btn btn-primary mr-1" href="<%=request.getContextPath()%>/globe">Go to Globe</a>
+      <!-- <a type="button" class="btn btn-primary mr-1" href="<%=request.getContextPath()%>/globe">Go to Globe</a>
       <a type="button" class="btn btn-primary mr-1" href="<%=request.getContextPath()%>/newglobe">Go to other globe</a>
-      <a type="button" class="btn btn-primary" href="<%=request.getContextPath()%>/testglobe">Test Globe</a> 
+      <a type="button" class="btn btn-primary" href="<%=request.getContextPath()%>/testglobe">Test Globe</a>  -->
     </div>
   </body>
 </html>
